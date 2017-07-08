@@ -46,7 +46,7 @@ class ShoppingCartTab extends Component {
 						<CardItem>
 							<Image style={{ width: 100, height: 100 }} source={{ uri: item.image }} />
 							<Body style={{ justifyContent: 'space-around', alignItems: 'center' }} >
-								<Text>Sankhadeep</Text>
+								<Text>{item.title} </Text>
 								<Text style={{ color: 'green', fontSize: 20 }} > $ 10 X {item.quantity} </Text>
 								<SimpleStepper maximumValue={9999999999} valueChanged={(value) => this.valueChanged(value, index)} />
 							</Body>

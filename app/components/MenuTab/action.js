@@ -18,8 +18,6 @@ export const addItemToCart = (item) => {
 	return function (dispacth, getState) {
 
 		const { shoppingCart } = getState();
-		console.log(shoppingCart);
-		console.log(item);
 		var addItem = _.find(shoppingCart.list, { 'id': item.id });
 		if (addItem === undefined) {
 			dispacth({ type: 'ADD_ITEM_TO_SHOPPING_CART', payload: item });
